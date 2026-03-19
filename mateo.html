@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBAN LEGENDS - Kisim's Quest</title>
+    <style>
+        /* CSS : Design et Mise en page */
+        :root {
+            --bg-color: #121212; /* Noir très sombre */
+            --text-color: #e0e0e0; /* Gris clair pour la lecture */
+            --accent-color: #ff4500; /* Orange vif (type fumigène/alerte) */
+            --title-font: 'Arial Black', 'Helvetica Bold', sans-serif;
+            --body-font: 'Georgia', serif; /* Serif pour le confort de lecture du récit */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--body-font);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 40px 0;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.03); /* Très léger fond gris */
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        /* En-tête */
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: var(--title-font);
+            color: var(--accent-color);
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 0px rgba(0,0,0,0.8);
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: #aaaaaa;
+            margin-top: 10px;
+        }
+
+        /* Sections générales */
+        h2 {
+            font-family: var(--title-font);
+            color: var(--accent-color);
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            color: #ffffff;
+            margin-top: 30px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* Listes (Titres, Gadgets, Étapes) */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #cccccc;
+        }
+
+        li strong {
+            color: #ffffff;
+        }
+
+        /* Zone de recherche de titres et préliminaires */
+        .notes-section ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+        }
+
+        .notes-section li {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 10px;
+            border-radius: 4px;
+            border-bottom: none;
+        }
+
+        /* Plot et Chapitres */
+        .story-content {
+            font-size: 1.1rem;
+        }
+
+        .plot-box {
+            background-color: rgba(255, 69, 0, 0.1); /* Fond orange très transparent */
+            border: 1px solid var(--accent-color);
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+
+        .chapter-title {
+            font-family: var(--title-font);
+            color: #ffffff;
+            font-size: 1.4rem;
+            margin-top: 50px;
+            text-decoration: underline;
+        }
+
+        /* Image du logo */
+        .logo-placeholder {
+            display: block;
+            margin: 30px auto;
+            max-width: 200px;
+            text-align: center;
+            padding: 20px;
+            border: 2px dashed #555;
+            color: #777;
+            font-family: monospace;
+            background-color: #000;
+        }
+
+        .logo-image {
+            display: block;
+            margin: 30px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(255,69,0,0.3);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #666666;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile-friendly adjustments */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .container { width: 95%; margin: 20px 0; }
+            .notes-section ul { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Urban Legends</h1>
+            <p class="subtitle">Un projet de récit d'aventure et de Parkour</p>
+        </header>
+
+        <main>
+            <section class="notes-section">
+                <h2>Notes & Idées de Recherche</h2>
+                
+                <h3>Idées de titres :</h3>
+                <ul>
+                    <li>Outlaws Legends</li>
+                    <li>Subway Road</li>
+                    <li>P.E.A.K (Parkour Entertainment Active Kompagnie)</li>
+                    <li>Quest / Renegate Way</li>
+                    <li>Quest ?</li>
+                    <li>Défi ?</li>
+                    <li>Hope of the Street hero ?</li>
+                    <li>Street punk ?</li>
+                    <li>Urbanitious</li>
+                    <li>Urbanity ?</li>
+                    <li>Les légendes urbaines...</li>
+                </ul>
+
+                <h3>Niveaux de compétition :</h3>
+                <ul>
+                    <li>_Préliminaires</li>
+                    <li>_Départementales</li>
+                    <li>_National</li>
+                    <li>_Continentale</li>
+                    <li>_Mondiale</li>
+                    <li>_Planétale (international)</li>
+                </ul>
+
+                <h3>Gadgets prévus :</h3>
+                <ul>
+                    <li>Fumigène</li>
+                    <li>Grapin</li>
+                    <li>Grapin crabe (tire, puis t'attire rapidement à 1 endroit)</li>
+                    <li>Radar</li>
+                    <li>Désactive les gadgets (onde éléctrochoc)</li>
+                </ul>
+
+                <h3>Games :</h3>
+                <p><em>(Espace réservé pour les détails des types de jeux/épreuves)</em></p>
+            </section>
+
+            <section class="story-content">
+                <h2>Synopsis (Plot)</h2>
+                <div class="plot-box">
+                    <p>Dans un monde ravagé par le dérèglement climatique, nous suivons Kisim. Il est un jeune Indien vivant dans un bidonville, et il va faire la rencontre d'Arminn, un vieux pécheur surnommé le vieux poulpe. Arminn va convaincre Kisim de participer a un tournoi international de Parkour a travers le monde. Va-t-il réussir à prouver sa valeur dans ce monde dangereux et Instable ?!</p>
+                </div>
+
+                <h2 class="chapter-title">Chapitre 1: _Origins</h2>
+                
+                <p>Dans un bidonville Indien, Kisim fuis Arminn a travers les maisons en bois, tuiles et briques. "Attends ! Reviens ! MAIS REVIENS !" Crie Arminn alors que Kisim venait encore de lui voler de la nourriture. Finalement, agile et rapide comme une panthère, Kisim parvient à s'enfuir et à ramener la nourriture chez lui.</p>
+
+                <p>Après avoir un peu exploré la ville, Kisim rejoins Malik sur un terrain de basket, et fais la course avec lui. Malheureusement, Arminn a préparer un piège et des personnes connus de la ville essayent de l'attraper. Mais notre jeune Indien parvient encore à s'échapper.</p>
+
+                <p>Finalement, Malik lui donne rendez-vous au pied du phare, et Arminn essaye de le convaincre de partir avec lui, par delà la mer, Afin de tenter sa chance au un Tournoi International de Parkour: CrossPeak Game. Kisim refuse d'abord, mais la nuit, il repense aux mots inspirants d'Arminn: Il choisit finalement le tout pour le tout, et va discrètement rejoindre Le vieux poulpe sur le vieux port pour naviguer direction : Kanim, la ville sur pilotis.</p>
+
+                <p>Une fois arrivé là bas, Kisim s'échappe rapidement explorer la ville, qui ressemble à un village médiéval construit avec du bois pourri. Mais Kisim est plein d'enthousiasme. Une fois rassasié, il va retrouvé Arminn qui l'oblige à faire un test physique dans un gymnase. Kisim réussit sans trop de difficulté, et part explorer la ville, en quête du chemin de la course. Malheureusement, il trouve Arminn en proie à des voyous. Kisim se précipite afin de protéger le vieux poulpe, la situation s'intensifie, parce qu'Arminn leur doit apparemment quelque chose.</p>
+
+                <p>Il finit par leur promettre que'ils leur rembourserait sous dix jours. Il refuse l'aide de Kisim, mais ce dernier n'a pas dis son dernier mot. Pendant la dispute, un gangsta a montré le symbole du gang (orgueil) qui est censé rester secret entre les membres du gang et ses collaborateurs.</p>
+
+                <p>Kisim a repéré ce symbole :</p>
+                
+                <div class="logo-placeholder">
+                    [Image 43.png]<br>
+                    (Logo du gang)
+                </div>
+
+                <p>Arminn va tenter de les rembourser dans une Phase de gameplay: commerce assez facile, tandis que Kisim va s'infiltrez dans la base du gang avec un masque, et ne va pas voler les richesses tout simplement parce qu'il y en avait pas (elles étaient entreposé à un autre endroit).</p>
+
+                <p>Par chance, Kisim va repéré un sorte de coffre fort rouillé, qui semblait daté de l'époque de son grand père, avec à l'intérieur un sorte de shère mécanique doré parsemée de tâches brunes, ressemblant à une.... Départ et d'autres, un petit engrenage dépassait la forme lisse de cet objet, qui était aussi coupé en son centre: on pouvait en voir l'intérieur.</p>
+
+                <p>Kisim, fasciné par cet objet, le prit, l'observa une seconde avant qu'un bruit retentissant s'enclencha: il venait, sans doute, d'activer l'alarme ! Pris de panique, il remis son masque métallique, le même utilisé par les soudeurs, mais avec la visière un peu plus grande, et un smiley X_o graffé dessus. Il réussis à s'échapper, malgré les chaussures métalliqes qui lui rajouter cinq bon centimètres.</p>
+
+                <p>Le soir, il réussit à vendre ce "bidule" 5000 ₹, ce qui n'était pas suffisant. Afin de brouiller les pistes, il aura fait un graf avec le logo du gang...</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 - Projet Urban Legends. Tous droits réservés.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
